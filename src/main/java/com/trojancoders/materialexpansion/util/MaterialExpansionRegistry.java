@@ -28,6 +28,7 @@ public class MaterialExpansionRegistry {
     public static final RegistryObject<Item> IRON_DUST = ITEMS.register("iron_dust", MaterialExpansionDustItem::new);
     public static final RegistryObject<Item> LITHIUM_DUST = ITEMS.register("lithium_dust", MaterialExpansionDustItem::new);
     public static final RegistryObject<Item> NICKEL_DUST = ITEMS.register("nickel_dust", MaterialExpansionDustItem::new);
+    public static final RegistryObject<Item> STEEL_DUST = ITEMS.register("steel_alloy_dust", MaterialExpansionDustItem::new);
     public static final RegistryObject<Item> TITANIUM_DUST = ITEMS.register("titanium_dust", MaterialExpansionDustItem::new);
     public static final RegistryObject<Item> TITANIUM_ALLOY_DUST = ITEMS.register("titanium_alloy_dust", MaterialExpansionDustItem::new);
 
@@ -36,6 +37,7 @@ public class MaterialExpansionRegistry {
     public static final RegistryObject<Item> COPPER_INGOT = ITEMS.register("copper_ingot", MaterialExpansionIngotItem::new);
     public static final RegistryObject<Item> LITHIUM_INGOT = ITEMS.register("lithium_ingot", MaterialExpansionIngotItem::new);
     public static final RegistryObject<Item> NICKEL_INGOT = ITEMS.register("nickel_ingot", MaterialExpansionIngotItem::new);
+    public static final RegistryObject<Item> STEEL_INGOT = ITEMS.register("steel_ingot", MaterialExpansionIngotItem::new);
     public static final RegistryObject<Item> TITANIUM_INGOT = ITEMS.register("titanium_ingot", MaterialExpansionIngotItem::new);
     public static final RegistryObject<Item> TITANIUM_ALLOY_INGOT = ITEMS.register("titanium_alloy_ingot", MaterialExpansionIngotItem::new);
 
@@ -47,6 +49,7 @@ public class MaterialExpansionRegistry {
     public static final RegistryObject<Block> COPPER_BLOCK = BLOCKS.register("copper_block", ()-> new MaterialExpansionBlock(AbstractBlock.Properties.of(Material.METAL)));
     public static final RegistryObject<Block> LITHIUM_BLOCK = BLOCKS.register("lithium_block", ()-> new MaterialExpansionBlock(AbstractBlock.Properties.of(Material.METAL)));
     public static final RegistryObject<Block> NICKEL_BLOCK= BLOCKS.register("nickel_block", ()-> new MaterialExpansionBlock(AbstractBlock.Properties.of(Material.METAL)));
+    public static final RegistryObject<Block> STEEL_BLOCK = BLOCKS.register("steel_block", ()-> new MaterialExpansionBlock(AbstractBlock.Properties.of(Material.METAL)));
     public static final RegistryObject<Block> TITANIUM_BLOCK = BLOCKS.register("titanium_block", ()-> new MaterialExpansionBlock(AbstractBlock.Properties.of(Material.METAL)));
     public static final RegistryObject<Block> TITANIUM_ALLOY_BLOCK = BLOCKS.register("titanium_alloy_block", ()-> new MaterialExpansionBlock(AbstractBlock.Properties.of(Material.METAL)));
 
