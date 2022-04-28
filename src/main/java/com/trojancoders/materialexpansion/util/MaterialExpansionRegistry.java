@@ -22,22 +22,22 @@ public class MaterialExpansionRegistry {
     //Items
 
     //Dusts
-    public static final RegistryObject<Item> ALUMINUM_DUST = ITEMS.register("aluminum_dust", ()-> new MaterialExpansionDustItem());
-    public static final RegistryObject<Item> CARBON_DUST = ITEMS.register("carbon_dust", ()-> new MaterialExpansionDustItem());
-    public static final RegistryObject<Item> COPPER_DUST = ITEMS.register("copper_dust", ()-> new MaterialExpansionDustItem());
-    public static final RegistryObject<Item> IRON_DUST = ITEMS.register("iron_dust", ()-> new MaterialExpansionDustItem());
-    public static final RegistryObject<Item> LITHIUM_DUST = ITEMS.register("lithium_dust", ()-> new MaterialExpansionDustItem());
-    public static final RegistryObject<Item> NICKEL_DUST = ITEMS.register("nickel_dust", ()-> new MaterialExpansionDustItem());
-    public static final RegistryObject<Item> TITANIUM_DUST = ITEMS.register("titanium_dust", ()-> new MaterialExpansionDustItem());
-    public static final RegistryObject<Item> TITANIUM_ALLOY_DUST = ITEMS.register("titanium_alloy_dust", ()-> new MaterialExpansionDustItem());
+    public static final RegistryObject<Item> ALUMINUM_DUST = ITEMS.register("aluminum_dust", MaterialExpansionDustItem::new);
+    public static final RegistryObject<Item> CARBON_DUST = ITEMS.register("carbon_dust", MaterialExpansionDustItem::new);
+    public static final RegistryObject<Item> COPPER_DUST = ITEMS.register("copper_dust", MaterialExpansionDustItem::new);
+    public static final RegistryObject<Item> IRON_DUST = ITEMS.register("iron_dust", MaterialExpansionDustItem::new);
+    public static final RegistryObject<Item> LITHIUM_DUST = ITEMS.register("lithium_dust", MaterialExpansionDustItem::new);
+    public static final RegistryObject<Item> NICKEL_DUST = ITEMS.register("nickel_dust", MaterialExpansionDustItem::new);
+    public static final RegistryObject<Item> TITANIUM_DUST = ITEMS.register("titanium_dust", MaterialExpansionDustItem::new);
+    public static final RegistryObject<Item> TITANIUM_ALLOY_DUST = ITEMS.register("titanium_alloy_dust", MaterialExpansionDustItem::new);
 
     //Ingots
-    public static final RegistryObject<Item> ALUMINUM_INGOT = ITEMS.register("aluminum_ingot", ()-> new MaterialExpansionIngotItem());
-    public static final RegistryObject<Item> COPPER_INGOT = ITEMS.register("copper_ingot", ()-> new MaterialExpansionIngotItem());
-    public static final RegistryObject<Item> LITHIUM_INGOT = ITEMS.register("lithium_ingot", ()-> new MaterialExpansionIngotItem());
-    public static final RegistryObject<Item> NICKEL_INGOT = ITEMS.register("nickel_ingot", ()-> new MaterialExpansionIngotItem());
-    public static final RegistryObject<Item> TITANIUM_INGOT = ITEMS.register("titanium_ingot", ()-> new MaterialExpansionIngotItem());
-    public static final RegistryObject<Item> TITANIUM_ALLOY_INGOT = ITEMS.register("titanium_alloy_ingot", ()-> new MaterialExpansionIngotItem());
+    public static final RegistryObject<Item> ALUMINUM_INGOT = ITEMS.register("aluminum_ingot", MaterialExpansionIngotItem::new);
+    public static final RegistryObject<Item> COPPER_INGOT = ITEMS.register("copper_ingot", MaterialExpansionIngotItem::new);
+    public static final RegistryObject<Item> LITHIUM_INGOT = ITEMS.register("lithium_ingot", MaterialExpansionIngotItem::new);
+    public static final RegistryObject<Item> NICKEL_INGOT = ITEMS.register("nickel_ingot", MaterialExpansionIngotItem::new);
+    public static final RegistryObject<Item> TITANIUM_INGOT = ITEMS.register("titanium_ingot", MaterialExpansionIngotItem::new);
+    public static final RegistryObject<Item> TITANIUM_ALLOY_INGOT = ITEMS.register("titanium_alloy_ingot", MaterialExpansionIngotItem::new);
 
 
 
