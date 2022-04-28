@@ -44,7 +44,7 @@ public class MaterialExpansion
     public static final ItemGroup MaterialExpansionMaterialGroup = new ItemGroup("material_expansion_material_group") {
         @Override
         public ItemStack makeIcon() {
-            return null;
+            return MaterialExpansionRegistry.ALUMINUM_DUST.get().getDefaultInstance();
         }
     };
 
