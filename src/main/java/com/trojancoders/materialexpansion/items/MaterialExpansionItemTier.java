@@ -14,7 +14,7 @@ public enum MaterialExpansionItemTier implements IItemTier {
     COPPER(2, 250, 6.0F, 2.0F, 14, () -> {
         return Ingredient.of(MaterialExpansionRegistry.COPPER_INGOT.get());
     }),
-    NICKEl(2, 250, 6.0F, 2.0F, 14, () -> {
+    NICKEL(2, 250, 6.0F, 2.0F, 14, () -> {
         return Ingredient.of(MaterialExpansionRegistry.NICKEL_INGOT.get());
     }),
     STEEL(3, 1561, 8.0F, 3.0F, 10, () -> {

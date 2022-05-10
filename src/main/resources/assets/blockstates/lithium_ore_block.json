@@ -1,0 +1,7 @@
+{
+  "variants": {
+    "": {
+      "model": "materialexpansion:block/lithium_ore_block"
+    }
+  }
+}

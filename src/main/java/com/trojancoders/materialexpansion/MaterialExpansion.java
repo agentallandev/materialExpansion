@@ -32,13 +32,13 @@ public class MaterialExpansion
     public static final ItemGroup MaterialExpansionArmorGroup = new ItemGroup("material_expansion_armor_group") {
         @Override
         public ItemStack makeIcon() {
-            return null;
+            return MaterialExpansionRegistry.ALUMINUM_CHESTPLATE.get().getDefaultInstance();
         }
     };
     public static final ItemGroup MaterialExpansionToolGroup = new ItemGroup("material_expansion_tool_group") {
         @Override
         public ItemStack makeIcon() {
-            return null;
+            return MaterialExpansionRegistry.ALUMINUM_SHOVEL.get().getDefaultInstance();
         }
     };
     public static final ItemGroup MaterialExpansionMaterialGroup = new ItemGroup("material_expansion_material_group") {

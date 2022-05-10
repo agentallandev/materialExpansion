@@ -8,8 +8,7 @@ import net.minecraft.block.Block;
 import net.minecraft.block.material.Material;
 import net.minecraft.block.material.MaterialColor;
 import net.minecraft.inventory.EquipmentSlotType;
-import net.minecraft.item.AxeItem;
-import net.minecraft.item.Item;
+import net.minecraft.item.*;
 import net.minecraftforge.eventbus.api.IEventBus;
 import net.minecraftforge.fml.RegistryObject;
 import net.minecraftforge.registries.DeferredRegister;
@@ -60,6 +59,18 @@ public class MaterialExpansionRegistry {
     public static final RegistryObject<Block> NICKEL_ORE_BLOCK= BLOCKS.register("nickel_ore_block", ()-> new MaterialExpansionBlock(AbstractBlock.Properties.of(Material.STONE)));
     public static final RegistryObject<Block> TITANIUM_ORE_BLOCK = BLOCKS.register("titanium_ore_block", ()-> new MaterialExpansionBlock(AbstractBlock.Properties.of(Material.STONE)));
 
+    public static final RegistryObject<Item> ALUMINUM_BLOCK_ITEM = ITEMS.register("aluminum_block_item", ()-> new MaterialExpansionBlockItem(ALUMINUM_BLOCK.get()));
+    public static final RegistryObject<Item> COPPER_BLOCK_ITEM = ITEMS.register("copper_block_item", ()-> new MaterialExpansionBlockItem(COPPER_BLOCK.get()));
+    public static final RegistryObject<Item> LITHIUM_BLOCK_ITEM = ITEMS.register("lithum_block_item", ()-> new MaterialExpansionBlockItem(LITHIUM_BLOCK.get()));
+    public static final RegistryObject<Item> NICKEL_BLOCK_ITEM = ITEMS.register("nickel_block_item", ()-> new MaterialExpansionBlockItem(NICKEL_BLOCK.get()));
+    public static final RegistryObject<Item> STEEL_BLOCK_ITEM = ITEMS.register("steel_block_item", ()-> new MaterialExpansionBlockItem(STEEL_BLOCK.get()));
+    public static final RegistryObject<Item> TITANIUM_BLOCK_ITEM = ITEMS.register("titanium_block_item", ()-> new MaterialExpansionBlockItem(TITANIUM_BLOCK.get()));
+    public static final RegistryObject<Item> TITANIUM_ALLOY_BLOCK_ITEM = ITEMS.register("titanium_alloy_block_item", ()-> new MaterialExpansionBlockItem(TITANIUM_ALLOY_BLOCK.get()));
+    public static final RegistryObject<Item> ALUMINUM_ORE_BLOCK_ITEM = ITEMS.register("aluminum_block_item", ()-> new MaterialExpansionBlockItem(ALUMINUM_BLOCK.get()));
+    public static final RegistryObject<Item> COPPER_ORE_BLOCK_ITEM = ITEMS.register("copper_block_item", ()-> new MaterialExpansionBlockItem(COPPER_BLOCK.get()));
+    public static final RegistryObject<Item> LITHIUM_ORE_BLOCK_ITEM = ITEMS.register("lithum_block_item", ()-> new MaterialExpansionBlockItem(LITHIUM_BLOCK.get()));
+    public static final RegistryObject<Item> NICKEL_ORE_BLOCK_ITEM = ITEMS.register("nickel_block_item", ()-> new MaterialExpansionBlockItem(NICKEL_BLOCK.get()));
+    public static final RegistryObject<Item> TITANIUM_ORE_BLOCK_ITEM = ITEMS.register("titanium_block_item", ()-> new MaterialExpansionBlockItem(TITANIUM_BLOCK.get()));
 
     //Armor
     public static final RegistryObject<Item> COPPER_HELMET = ITEMS.register("copper_helmet", ()-> new MaterialExpansionArmorItem(MaterialExpansionArmorMaterial.COPPER, EquipmentSlotType.HEAD));
@@ -90,6 +101,45 @@ public class MaterialExpansionRegistry {
     public static final RegistryObject<Item> EMERALD_CHESTPLATE = ITEMS.register("emerald_chestplate", ()-> new MaterialExpansionArmorItem(MaterialExpansionArmorMaterial.EMERALD, EquipmentSlotType.CHEST));
     public static final RegistryObject<Item> EMERALD_LEGGINGS = ITEMS.register("emerald_leggings", ()-> new MaterialExpansionArmorItem(MaterialExpansionArmorMaterial.EMERALD, EquipmentSlotType.LEGS));
     public static final RegistryObject<Item> EMERALD_BOOTS = ITEMS.register("emerald_boots", ()-> new MaterialExpansionArmorItem(MaterialExpansionArmorMaterial.EMERALD, EquipmentSlotType.FEET));
+
+
+    public static final RegistryObject<Item> COPPER_SWORD = ITEMS.register("copper_sword", () ->  new SwordItem(MaterialExpansionItemTier.COPPER, 3, -2.4F, (new Item.Properties()).tab(MaterialExpansion.MaterialExpansionToolGroup)));
+    public static final RegistryObject<Item> COPPER_SHOVEL = ITEMS.register("copper_shovel", () ->  new ShovelItem(MaterialExpansionItemTier.COPPER, 1.5F, -3.0F, (new Item.Properties()).tab(MaterialExpansion.MaterialExpansionToolGroup)));
+    public static final RegistryObject<Item> COPPER_PICKAXE = ITEMS.register("copper_pickaxe", () ->  new PickaxeItem(MaterialExpansionItemTier.COPPER, 1, -2.8F, (new Item.Properties()).tab(MaterialExpansion.MaterialExpansionToolGroup)));
+    public static final RegistryObject<Item> COPPER_AXE = ITEMS.register("copper_axe", () -> new AxeItem(MaterialExpansionItemTier.COPPER, 6.0F, -3.1F, (new Item.Properties()).tab(MaterialExpansion.MaterialExpansionToolGroup)));
+    public static final RegistryObject<Item> NICKEL_SWORD = ITEMS.register("nickel_sword", () ->  new SwordItem(MaterialExpansionItemTier.NICKEL, 3, -2.4F, (new Item.Properties()).tab(MaterialExpansion.MaterialExpansionToolGroup)));
+    public static final RegistryObject<Item> NICKEL_SHOVEL = ITEMS.register("nickel_shovel", () ->  new ShovelItem(MaterialExpansionItemTier.NICKEL, 1.5F, -3.0F, (new Item.Properties()).tab(MaterialExpansion.MaterialExpansionToolGroup)));
+    public static final RegistryObject<Item> NICKEL_PICKAXE = ITEMS.register("nickel_pickaxe", () ->  new PickaxeItem(MaterialExpansionItemTier.NICKEL, 1, -2.8F, (new Item.Properties()).tab(MaterialExpansion.MaterialExpansionToolGroup)));
+    public static final RegistryObject<Item> NICKEL_AXE = ITEMS.register("nickel_axe", () -> new AxeItem(MaterialExpansionItemTier.NICKEL, 6.0F, -3.1F, (new Item.Properties()).tab(MaterialExpansion.MaterialExpansionToolGroup)));
+    public static final RegistryObject<Item> STEEL_SWORD = ITEMS.register("steel_sword", () ->  new SwordItem(MaterialExpansionItemTier.STEEL, 3, -2.4F, (new Item.Properties()).tab(MaterialExpansion.MaterialExpansionToolGroup)));
+    public static final RegistryObject<Item> STEEL_SHOVEL = ITEMS.register("steel_shovel", () ->  new ShovelItem(MaterialExpansionItemTier.STEEL, 1.5F, -3.0F, (new Item.Properties()).tab(MaterialExpansion.MaterialExpansionToolGroup)));
+    public static final RegistryObject<Item> STEEL_PICKAXE = ITEMS.register("steel_pickaxe", () ->  new PickaxeItem(MaterialExpansionItemTier.STEEL, 1, -2.8F, (new Item.Properties()).tab(MaterialExpansion.MaterialExpansionToolGroup)));
+    public static final RegistryObject<Item> STEEL_AXE = ITEMS.register("steel_axe", () -> new AxeItem(MaterialExpansionItemTier.STEEL, 6.0F, -3.1F, (new Item.Properties()).tab(MaterialExpansion.MaterialExpansionToolGroup)));
+    public static final RegistryObject<Item> TITANIUM_SWORD = ITEMS.register("titanium_sword", () ->  new SwordItem(MaterialExpansionItemTier.TITANIUM, 3, -2.4F, (new Item.Properties()).tab(MaterialExpansion.MaterialExpansionToolGroup)));
+    public static final RegistryObject<Item> TITANIUM_SHOVEL = ITEMS.register("titanium_shovel", () ->  new ShovelItem(MaterialExpansionItemTier.TITANIUM, 1.5F, -3.0F, (new Item.Properties()).tab(MaterialExpansion.MaterialExpansionToolGroup)));
+    public static final RegistryObject<Item> TITANIUM_PICKAXE = ITEMS.register("titanium_pickaxe", () ->  new PickaxeItem(MaterialExpansionItemTier.TITANIUM, 1, -2.8F, (new Item.Properties()).tab(MaterialExpansion.MaterialExpansionToolGroup)));
+    public static final RegistryObject<Item> TITANIUM_AXE = ITEMS.register("titanium_axe", () -> new AxeItem(MaterialExpansionItemTier.TITANIUM, 6.0F, -3.1F, (new Item.Properties()).tab(MaterialExpansion.MaterialExpansionToolGroup)));
+    public static final RegistryObject<Item> ALUMINUM_SWORD = ITEMS.register("aluminum_sword", () ->  new SwordItem(MaterialExpansionItemTier.ALUMINUM, 3, -2.4F, (new Item.Properties()).tab(MaterialExpansion.MaterialExpansionToolGroup)));
+    public static final RegistryObject<Item> ALUMINUM_SHOVEL = ITEMS.register("aluminum_shovel", () ->  new ShovelItem(MaterialExpansionItemTier.ALUMINUM, 1.5F, -3.0F, (new Item.Properties()).tab(MaterialExpansion.MaterialExpansionToolGroup)));
+    public static final RegistryObject<Item> ALUMINUM_PICKAXE = ITEMS.register("aluminum_pickaxe", () ->  new PickaxeItem(MaterialExpansionItemTier.ALUMINUM, 1, -2.8F, (new Item.Properties()).tab(MaterialExpansion.MaterialExpansionToolGroup)));
+    public static final RegistryObject<Item> ALUMINUM_AXE = ITEMS.register("aluminum_axe", () -> new AxeItem(MaterialExpansionItemTier.ALUMINUM, 6.0F, -3.1F, (new Item.Properties()).tab(MaterialExpansion.MaterialExpansionToolGroup)));
+    public static final RegistryObject<Item> TITANIUM_ALLOY_SWORD = ITEMS.register("titanium_alloy_sword", () ->  new SwordItem(MaterialExpansionItemTier.TITANIUM_ALLOY, 3, -2.4F, (new Item.Properties()).tab(MaterialExpansion.MaterialExpansionToolGroup)));
+    public static final RegistryObject<Item> TITANIUM_ALLOY_SHOVEL = ITEMS.register("titanium_alloy_shovel", () ->  new ShovelItem(MaterialExpansionItemTier.TITANIUM_ALLOY, 1.5F, -3.0F, (new Item.Properties()).tab(MaterialExpansion.MaterialExpansionToolGroup)));
+    public static final RegistryObject<Item> TITANIUM_ALLOY_PICKAXE = ITEMS.register("titanium_alloy_pickaxe", () ->  new PickaxeItem(MaterialExpansionItemTier.TITANIUM_ALLOY, 1, -2.8F, (new Item.Properties()).tab(MaterialExpansion.MaterialExpansionToolGroup)));
+    public static final RegistryObject<Item> TITANIUM_ALLOY_AXE = ITEMS.register("titanium_alloy_axe", () -> new AxeItem(MaterialExpansionItemTier.TITANIUM_ALLOY, 6.0F, -3.1F, (new Item.Properties()).tab(MaterialExpansion.MaterialExpansionToolGroup)));
+    public static final RegistryObject<Item> EMERALD_SWORD = ITEMS.register("emerald_sword", () ->  new SwordItem(MaterialExpansionItemTier.EMERALD, 3, -2.4F, (new Item.Properties()).tab(MaterialExpansion.MaterialExpansionToolGroup)));
+    public static final RegistryObject<Item> EMERALD_SHOVEL = ITEMS.register("emerald_shovel", () ->  new ShovelItem(MaterialExpansionItemTier.EMERALD, 1.5F, -3.0F, (new Item.Properties()).tab(MaterialExpansion.MaterialExpansionToolGroup)));
+    public static final RegistryObject<Item> EMERALD_PICKAXE = ITEMS.register("emerald_pickaxe", () ->  new PickaxeItem(MaterialExpansionItemTier.EMERALD, 1, -2.8F, (new Item.Properties()).tab(MaterialExpansion.MaterialExpansionToolGroup)));
+    public static final RegistryObject<Item> EMERALD_AXE = ITEMS.register("emerald_axe", () -> new AxeItem(MaterialExpansionItemTier.EMERALD, 6.0F, -3.1F, (new Item.Properties()).tab(MaterialExpansion.MaterialExpansionToolGroup)));
+
+    public static final RegistryObject<Item> BATTERY = ITEMS.register("battery", MaterialExpansionMaterialItem::new);
+    public static final RegistryObject<Item> LIGHT_BULB = ITEMS.register("light_bulb", MaterialExpansionMaterialItem::new);
+    public static final RegistryObject<Item> COPPER_WIRE = ITEMS.register("copper_wire", MaterialExpansionMaterialItem::new);
+    public static final RegistryObject<Item> FUEL_CANISTER = ITEMS.register("fuel_canister", MaterialExpansionMaterialItem::new);
+    public static final RegistryObject<Item> THRUSTERS = ITEMS.register("thrusters", MaterialExpansionMaterialItem::new);
+    public static final RegistryObject<Item> JETPACK = ITEMS.register("jetpack", MaterialExpansionMaterialItem::new);
+    public static final RegistryObject<Item> SPRINGS = ITEMS.register("springs", MaterialExpansionMaterialItem::new);
+
 
     public static void initRegistries(IEventBus eventBus)
     {
